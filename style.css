@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
@@ -76,19 +74,18 @@
     font-size: 40px;
     font-weight: 500;
     color: #3b3663;
-    margin-bottom: 3rem;
 }
 
 .tiles {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px auto;
     flex-flow: wrap;
-    margin-top: 1rem;
 }
 
 .tile {
-    width: 350px;
+    width: 320px;
     margin: 0 10px;
     border: 3px solid #e8e8e8;
     background: #fff;
@@ -165,7 +162,7 @@ ul {
     list-style: none;
     padding: 0;
     text-align: left;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 li {
@@ -193,6 +190,7 @@ button.get-started {
     padding: 12px 25px;
     border-radius: 7px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button.get-started:hover {
@@ -216,11 +214,47 @@ button.get-started:hover {
     font-size: 18px;
     color: rgba(22, 28, 45, 0.7);
     opacity: .8;
-    margin-top: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
     .tile {
-        margin-top: 4rem;
+        margin-top: 2rem;
+    }
+    .main-heading h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    .container {
+        padding: 15px 15px;
+    }
+    .main-heading h1 {
+        font-size: 20px;
+    }
+    .tiles {
+        margin: 20px 0;
+    }
+    .plan {
+        font-size: 24px;
+    }
+    .amount {
+        font-size: 10px;
+    }
+    .time-period {
+        font-size: 0.5rem;
+    }
+    li {
+        font-size: 14px;
+    }
+    button.get-started,
+    .filled-button {
+        font-size: 15px;
+    }
+    .tile {
+        width: 100%;
+    }
+    .footer-text p {
+        font-size: 15px;
     }
 }
